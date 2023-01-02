@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--whiteColor);
+    text-decoration-color: var(--pinkColor);
+
+}
+
+:root {
+    --whiteColor: #fff;
+    --pinkColor: #DF4E8F;
+    --background: #191919;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+}
+
+nav {
+    width: 100%;
+    height: 7rem;
+    text-align: right;
+    margin-right: 2rem;
+    display: flex;
+    gap: 65%;
+    position: fixed;
+    z-index: 999;
+}
+
+nav>ul,
+li {
+    color: var(--whiteColor);
+    display: inline-block;
+    text-align: right;
+    margin: 1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.logo>img {
+    width: 15%;
+    position: absolute;
+    margin: 2rem;
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.6rem;
+    text-decoration-skip-ink: none;
+    text-decoration-color: var(--pinkColor);
+}
+
+.social-links-container {
+    z-index: 888;
+    display: flex;
+    border-radius: 0 0.5rem 0.5rem 0;
+    flex-direction: column;
+    position: fixed;
+    margin-top: 15rem;
+    font-size: 1.5rem;
+    background-color: rgba(240, 248, 255, 0.17);
+}
+
+.social-links-container>* {
+    padding: 0.4rem;
+}
+
+.social-links-container>*:hover {
+    color: var(--pinkColor);
+    transition: 0.2 ease-in-out;
+}
+
+/*HOME PAGE*/
+
+#home {
+    display: flex;
+}
+
+.home_photo {
+    height: 35rem;
+    float: right;
+    position: relative;
+    top: 2rem;
+    margin: 2rem;
+
+}
+
+.home_title {
+    color: var(--whiteColor);
+    justify-content: center;
+    position: relative;
+    top: 15rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.circle_image {
+    height: 35rem;
+    padding-top: 5rem;
+    margin-left: 3rem;
+}
+
+.cv_button {
+    text-align: center;
+    background-color: var(--pinkColor);
+    padding: 1.5rem;
+    position: relative;
+    font-size: 1rem;
+    top: 2rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+}
+
+.cv_button:hover {
+    background-color: var(--whiteColor);
+    color: var(--pinkColor);
+    transition: 0.2s ease-in-out;
+}
+
+.home_smalltext {
+    position: relative;
+    top: 4rem;
+    font-size: 1rem;
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-thickness: 0.6rem;
+    text-decoration-skip-ink: none;
+    text-decoration-color: var(--pinkColor);
+}
+
+.page-scroll .btn-circle i.animated {
+    margin-top: 8rem;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+.page-scroll .btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.btn-circle {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.333);
+    -webkit-transition: background .4s ease-in-out;
+    -moz-transition: background .4s ease-in-out;
+    transition: background .4s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: var(--pinkColor);
+
+}
+
+/*ABOUT ME PAGE*/
+
+.about_text {
+    color: var(--whiteColor);
+    margin-left: 5rem;
+    margin-right: 5rem;
+    position: relative;
+    top: 13rem;
+    font-size: 1.5rem;
+}
+
+.green {
+    background-color: var(--background);
+    color: green;
+}
+
+.red {
+    background-color: var(--background);
+    color: red;
+}
+
+.skills-container {
+    color: var(--whiteColor);
+    position: relative;
+    top: 18rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.skills-photos>* {
+    height: 3rem;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: rgb(238, 238, 238);
+    color: var(--pinkColor);
+    border-radius: 5px;
+}
+
+progress[value]::-webkit-progress-value {
+    background-image:
+        -webkit-linear-gradient(left, var(--pinkColor), var(--pinkColor));
+
+    border-radius: 5px;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.second_circle {
+    float: right;
+    position: relative;
+    top: 5rem;
+    left: 12rem;
+}
+
+.courses-container{
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    padding-top: 3rem;
+    color: var(--whiteColor);
+}
+
+.course{
+    background-color: var(--pinkColor);
+    width: 15rem;
+    height: 20rem;
+}
+
+.course-name, .course-issued-by{
+    padding: 1rem;
+}
+
+.course-name{
+    font-size: 2rem;
+}
+
+
+.course-name::before{
+    content: '\2713';
+    color: rgb(119, 195, 6);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  color: var(--background);
+  font-size: 12px;
+  background-color: var(--whiteColor);
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+}
+
+.hover-text:hover .tooltip-text {
+  visibility: visible;
+}
+
+#top {
+    left:8.5%;
+    top: 0%;
+}
+#top1{
+    left:27.5%;
+    top: 0%;
+}
+#top2{
+    left:64%;
+    top: 0%;
+}
+#top3{
+    left:82.5%;
+    top: 0%;
+}
+
+/*PROJECTS*/
+.projects-container{
+    padding-top: 7rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.project-photo{
+    height: 12rem;
+    width: 12rem;
+}
+.project{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    color: var(--whiteColor);
+}
+
+.project-title{
+    font-size: 2.5rem;
+}
+
+.project-category{
+    color: var(--pinkColor);
+}
+.project-open{
+    background-color: var(--pinkColor);
+    padding: 0.7rem;
+    position: relative;
+    top: 2rem;
+    border-radius: 0.7rem;
+}
+
+/*RESPONSIVENESS*/
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    html, body, section{
+        overflow-x: hidden;
+    }
+    #home{
+        height: 75vh;
+    }
+    section{
+        width: 100vw;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 7rem;
+        text-align: right;
+        margin-right: 2rem;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        
+    }
+    .circle_image,.home_photo {
+        display: none;
+    }
+
+    .home_title {
+        font-size: 1.7rem;
+    }
+    
+    .logo>img {
+        width: 12rem;
+    }
+    
+    nav>ul,
+    li {
+        margin: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .about_text {
+        color: var(--whiteColor);
+        margin-left: 3rem;
+        margin-right: 3rem;
+        position: relative;
+        top: 10rem;
+        font-size: 0.8rem;
+        text-align: justify;
+    }
+    .skills-container{
+        flex-direction: column;
+        gap: 2rem;
+        top:11rem
+    }
+    .courses-container{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 10rem;
+        color: var(--whiteColor);
+        width: 100%;
+    }
+    .projects-container{
+        position: relative;
+        top: 4rem;
+        width: 100vw;
+        height: 100%;
+        height: fit-content;
+        align-items: center;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .project{
+        flex-direction: column;
+        padding-bottom: 2rem;
+        border: 1px solid var(--pinkColor);
+        width: 88vw;
+        height: fit-content;
+      
+    }
+
+    .project-photo{
+        height: 9rem;
+        width: 9rem;
+    }
+    
+    .project-title{
+        font-size: 1.5rem;
+    }
+    
+    .project-category{
+        color: var(--pinkColor);
+    }
+    .project-open{
+        background-color: var(--pinkColor);
+        padding: 0.7rem;
+        position: relative;
+        top: 0.8rem;
+        border-radius: 0.7rem;
+    }
+    .project-desc{
+        text-align: justify;
+        width: 90%;
+        padding: 0.2rem;
+        font-size: 0.8rem;
+    }
+    }
